@@ -1,0 +1,48 @@
+### 
+GET http://localhost:3000/
+
+### 
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "pedro",
+  "password": "123"
+}
+
+### 
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "pedro",
+  "password": "123"
+}
+
+### 
+POST http://localhost:3000/chamados
+Content-Type: application/json
+
+{
+  "titulo": "pc nao liga",
+  "descricao": "tela preta",
+  "responsavel_id": 1
+}
+
+### 
+GET http://localhost:3000/chamados/1
+
+### 
+GET http://localhost:3000/chamados/responsavel/1
+
+### 
+PUT http://localhost:3000/chamados/1
+Content-Type: application/json
+
+{
+  "titulo": "pc morreu",
+  "descricao": "nao liga nada"
+}
+
+### 
+DELETE http://localhost:3000/chamados/1
